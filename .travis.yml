@@ -1,0 +1,32 @@
+# 2016 April 27
+# https://github.com/bevry/base
+
+# Use the latest travis infrastructure
+sudo: false
+
+# We use node
+language: node_js
+node_js:
+  - "0.12"
+  - "4"
+  - "5"
+  - "6"
+cache:
+  directories:
+    - node_modules
+
+# Prepare our tests
+# Ensure the project is setup correctly and compiled
+install: "npm run-script setup"
+before_script: "npm run-script compile"
+
+# Run our tests
+script: "npm test"
+
+# Custom notifications
+notifications:
+  slack:
+    secure: GMjWWOMtgD7e0ZzljMrXsGO4b9/cYmSiEp6uAoE064hw+G0UMpQcG2X3eVmgqKfV/DWrfrN+HhKogtQvgaqHYkmT8pnEcPS3X/KwZryENqnIdkBql9jG1dZCvnGo3sXAkPC+89esUdjeVswgNgABfQ+NTN5TjRnKgVqpRHH53OE=
+  email:
+    recipients:
+      secure: YpYK1VMEqis0XrOv0/31K32EtQ8ruyi62s6+y0YJRx0PkR7INnhTLt/G2/I/C0jo+PuzkOB6ZfzG+tKd7v6evQLCs2s3KZDDV3A27LWL/4tIOQT9QkOK9MaihhpvOyUdolOR8/CsOK4h2oAIuikMDAUH30muKfjHAGEfjZ8r3uI=

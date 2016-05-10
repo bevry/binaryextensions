@@ -7,6 +7,7 @@
 
 <!-- BADGES/ -->
 
+<span class="badge-travisci"><a href="http://travis-ci.org/bevry/binaryextensions" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/bevry/binaryextensions/master.svg" alt="Travis CI Build Status" /></a></span>
 <span class="badge-npmversion"><a href="https://npmjs.org/package/binaryextensions" title="View this project on NPM"><img src="https://img.shields.io/npm/v/binaryextensions.svg" alt="NPM version" /></a></span>
 <span class="badge-npmdownloads"><a href="https://npmjs.org/package/binaryextensions" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/binaryextensions.svg" alt="NPM downloads" /></a></span>
 <span class="badge-daviddm"><a href="https://david-dm.org/bevry/binaryextensions" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/bevry/binaryextensions.svg" alt="Dependency Status" /></a></span>
