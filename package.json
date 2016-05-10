@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Binary Extensions",
   "name": "binaryextensions",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A package that contains an array of every single file extension there is for binary files",
   "homepage": "https://github.com/bevry/binaryextensions",
   "license": "MIT",
@@ -50,8 +50,8 @@
     "url": "http://github.com/bevry/binaryextensions.git"
   },
   "engines": {},
-  "main": "index.js",
-  "browser": "index.js",
+  "main": "index.json",
+  "browser": "index.json",
   "dependencies": {},
   "devDependencies": {
     "assert-helpers": "^4.2.0",
@@ -62,7 +62,6 @@
   "scripts": {
     "setup": "npm install",
     "meta": "npm run meta:projectz",
-    "meta:docs": "documentation build -f html -g --shallow ./source/**.js -o ./docs",
     "meta:projectz": "projectz compile",
     "prepare": "npm run test && npm run meta",
     "release": "npm run prepare && npm run release:publish && npm run release:tag && npm run release:push",

@@ -1,5 +1,8 @@
 # History
 
+## v2.0.0 2016 May 10
+- Now a json file
+
 ## v1.0.1 2016 May 2
 - Updated meta files
 
