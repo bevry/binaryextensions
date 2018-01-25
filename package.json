@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Binary Extensions",
   "name": "binaryextensions",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A package that contains an array of every single file extension there is for binary files",
   "homepage": "https://github.com/bevry/binaryextensions",
   "license": "MIT",
