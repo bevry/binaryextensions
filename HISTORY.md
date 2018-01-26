@@ -1,5 +1,8 @@
 # History
 
+## v2.1.1 2018 January 26
+- Fixed the `Unexpected end of input` error that you could experience under certain circumstances
+
 ## v2.1.0 2018 January 25
 - Updated base files
 
