@@ -1,5 +1,9 @@
 # History
 
+## v2.1.2 2018 November 7
+- Readme updates
+- Updated [base files](https://github.com/bevry/base) and [editions](https://github.com/bevry/editions) using [boundation](https://github.com/bevry/boundation)
+
 ## v2.1.1 2018 January 26
 - Fixed the `Unexpected end of input` error that you could experience under certain circumstances
 
