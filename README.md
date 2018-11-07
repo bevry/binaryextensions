@@ -70,9 +70,11 @@ console.log(require('binaryextensions'))
 
 ## Contribute
 
-Missing an extension? [Send a pull request!](https://github.com/bevry/binaryextensions/edit/master/index.js)
+Missing an extension? [Send a pull request!](https://github.com/bevry/binaryextensions/edit/master/source/index.js)
 
 Want a definitive list of text extensions? Check out [bevry/textextensions](https://github.com/bevry/textextensions)
+
+Want to detect if a file is text or binary? Check out [bevry/istextorbinary](https://github.com/bevry/istextorbinary)
 
 
 <!-- HISTORY/ -->
