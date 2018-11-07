@@ -80,6 +80,7 @@
     "joe": "^2.0.2",
     "joe-reporter-console": "^2.0.2",
     "projectz": "^1.4.0",
+    "textextensions": "^2.3.1",
     "valid-directory": "^1.0.0"
   },
   "optionalDependencies": {},
