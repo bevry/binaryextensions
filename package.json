@@ -76,7 +76,7 @@
   "browser": "source/index.json",
   "dependencies": {},
   "devDependencies": {
-    "assert-helpers": "^4.5.1",
+    "assert-helpers": "^5.0.0",
     "joe": "^2.0.2",
     "joe-reporter-console": "^2.0.2",
     "projectz": "^1.4.0",
