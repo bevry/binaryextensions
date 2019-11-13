@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Binary Extensions",
   "name": "binaryextensions",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "A package that contains an array of every single file extension there is for binary files",
   "homepage": "https://github.com/bevry/binaryextensions",
   "license": "MIT",
@@ -22,8 +22,6 @@
       "patreon",
       "flattr",
       "liberapay",
-      "thanksapp",
-      "boostlab",
       "buymeacoffee",
       "opencollective",
       "crypto",
@@ -38,9 +36,11 @@
       "opencollectiveUsername": "bevry",
       "patreonUsername": "bevry",
       "paypalURL": "https://bevry.me/paypal",
-      "wishlistURL": "https://bevry.me/wishlist"
+      "wishlistURL": "https://bevry.me/wishlist",
+      "travisTLD": "com"
     }
   },
+  "funding": "https://bevry.me/fund",
   "author": "2013+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
@@ -63,29 +63,26 @@
       "description": "JSON",
       "directory": "source",
       "entry": "index.json",
-      "syntaxes": [
+      "tags": [
         "json"
       ],
       "engines": {
-        "node": ">=0.8",
+        "node": true,
         "browsers": true
       }
     }
   ],
   "main": "source/index.json",
   "browser": "source/index.json",
-  "dependencies": {},
   "devDependencies": {
-    "assert-helpers": "^4.5.1",
-    "joe": "^2.0.2",
-    "joe-reporter-console": "^2.0.2",
-    "projectz": "^1.4.0",
-    "textextensions": "^2.3.1",
+    "assert-helpers": "4.10.0",
+    "kava": "^3.2.0",
+    "projectz": "^1.10.0",
+    "textextensions": "^2.5.0",
     "valid-directory": "^1.0.0"
   },
-  "optionalDependencies": {},
   "scripts": {
-    "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out",
+    "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
     "our:compile": "echo no need for this project",
     "our:deploy": "echo no need for this project",
     "our:meta": "npm run our:meta:projectz",
@@ -96,11 +93,11 @@
     "our:release:prepare": "npm run our:clean && npm run our:compile && npm run our:test && npm run our:meta",
     "our:release:push": "git push origin master && git push origin --tags",
     "our:release:tag": "export MESSAGE=$(cat ./HISTORY.md | sed -n \"/## v$npm_package_version/,/##/p\" | sed 's/## //' | awk 'NR>1{print buf}{buf = $0}') && test \"$MESSAGE\" || (echo 'proper changelog entry not found' && exit -1) && git tag v$npm_package_version -am \"$MESSAGE\"",
-    "our:setup": "npm run our:setup:npm",
-    "our:setup:npm": "npm install",
+    "our:setup": "npm run our:setup:install",
+    "our:setup:install": "npm install",
     "our:test": "npm run our:verify && npm test",
     "our:verify": "npm run our:verify:directory",
     "our:verify:directory": "npx valid-directory",
-    "test": "node --harmony ./source/test.js --joe-reporter=console"
+    "test": "node ./source/test.js"
   }
 }
