@@ -78,7 +78,7 @@
     "assert-helpers": "5.3.0",
     "kava": "^3.2.0",
     "projectz": "^1.10.0",
-    "textextensions": "^2.5.0",
+    "textextensions": "^3.0.0",
     "valid-directory": "^1.0.0"
   },
   "scripts": {
