@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Binary Extensions",
   "name": "binaryextensions",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "A package that contains an array of every single file extension there is for binary files",
   "homepage": "https://github.com/bevry/binaryextensions",
   "license": "MIT",
@@ -65,7 +65,7 @@
     "url": "https://github.com/bevry/binaryextensions.git"
   },
   "engines": {
-    "node": ">=0.8"
+    "node": ">=10"
   },
   "editions": [
     {
@@ -85,12 +85,12 @@
   "main": "source/index.json",
   "browser": "source/index.json",
   "devDependencies": {
-    "@bevry/update-contributors": "^1.6.0",
+    "@bevry/update-contributors": "^1.7.0",
     "assert-helpers": "^6.5.0",
-    "kava": "^5.1.0",
-    "projectz": "^2.2.0",
-    "textextensions": "^4.2.0",
-    "valid-directory": "^2.0.0"
+    "kava": "^5.2.0",
+    "projectz": "^2.3.0",
+    "textextensions": "^4.3.0",
+    "valid-directory": "^2.1.0"
   },
   "scripts": {
     "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
