@@ -1,15 +1,18 @@
 {
   "title": "The Definitive List of Binary Extensions",
   "name": "binaryextensions",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A package that contains an array of every single file extension there is for binary files",
   "homepage": "https://github.com/bevry/binaryextensions",
   "license": "MIT",
   "keywords": [
     "binary",
-    "extensions",
     "binary extensions",
-    "binary-extensions"
+    "binary-extensions",
+    "browser",
+    "extensions",
+    "json",
+    "node"
   ],
   "badges": {
     "list": [
@@ -19,6 +22,7 @@
       "daviddm",
       "daviddmdev",
       "---",
+      "githubsponsors",
       "patreon",
       "flattr",
       "liberapay",
@@ -29,6 +33,7 @@
       "wishlist"
     ],
     "config": {
+      "githubSponsorsUsername": "balupton",
       "buymeacoffeeUsername": "balupton",
       "cryptoURL": "https://bevry.me/crypto",
       "flattrUsername": "balupton",
@@ -37,16 +42,20 @@
       "patreonUsername": "bevry",
       "paypalURL": "https://bevry.me/paypal",
       "wishlistURL": "https://bevry.me/wishlist",
-      "travisTLD": "com"
+      "travisTLD": "com",
+      "githubUsername": "bevry",
+      "githubRepository": "binaryextensions",
+      "githubSlug": "bevry/binaryextensions",
+      "npmPackageName": "binaryextensions"
     }
   },
   "funding": "https://bevry.me/fund",
   "author": "2013+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
   "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/binaryextensions/issues"
@@ -72,20 +81,23 @@
       }
     }
   ],
+  "type": "commonjs",
   "main": "source/index.json",
   "browser": "source/index.json",
   "devDependencies": {
-    "assert-helpers": "6.4.0",
-    "kava": "^5.0.0",
-    "projectz": "^2.1.0",
-    "textextensions": "^4.0.0",
-    "valid-directory": "^1.0.0"
+    "@bevry/update-contributors": "^1.6.0",
+    "assert-helpers": "^6.5.0",
+    "kava": "^5.1.0",
+    "projectz": "^2.2.0",
+    "textextensions": "^4.2.0",
+    "valid-directory": "^2.0.0"
   },
   "scripts": {
     "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
     "our:compile": "echo no need for this project",
     "our:deploy": "echo no need for this project",
-    "our:meta": "npm run our:meta:projectz",
+    "our:meta": "npm run our:meta:contributors && npm run our:meta:projectz",
+    "our:meta:contributors": "update-contributors",
     "our:meta:projectz": "projectz compile",
     "our:release": "npm run our:release:prepare && npm run our:release:check-changelog && npm run our:release:check-dirty && npm run our:release:tag && npm run our:release:push",
     "our:release:check-changelog": "cat ./HISTORY.md | grep v$npm_package_version || (echo add a changelog entry for v$npm_package_version && exit -1)",
@@ -97,7 +109,7 @@
     "our:setup:install": "npm install",
     "our:test": "npm run our:verify && npm test",
     "our:verify": "npm run our:verify:directory",
-    "our:verify:directory": "npx valid-directory",
+    "our:verify:directory": "valid-directory",
     "test": "node ./source/test.js"
   }
 }
