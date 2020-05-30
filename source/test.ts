@@ -3,7 +3,7 @@
 // https://github.com/bevry/binaryextensions/blob/master/test.ts
 
 import list from './index.js'
-// import aliens from 'textextensions'
+import aliens from 'textextensions'
 
 import { equal, deepEqual } from 'assert-helpers'
 import { suite } from 'kava'
@@ -13,14 +13,14 @@ const listPath = join(__dirname, '..', 'list.json')
 const indentation = '  '
 
 suite('extensions', function (suite, test) {
-	// test('data had no text extensions', function () {
-	// 	const duplicates = list.filter((local) => aliens.includes(local))
-	// 	deepEqual(
-	// 		duplicates,
-	// 		[],
-	// 		'there should be no text extensions that are present inside binaryextensions'
-	// 	)
-	// })
+	test('data had no text extensions', function () {
+		const duplicates = list.filter((local) => aliens.includes(local))
+		deepEqual(
+			duplicates,
+			[],
+			'there should be no text extensions that are present inside binaryextensions'
+		)
+	})
 
 	test('data had duplicates removed', function () {
 		const set = new Set(list)
