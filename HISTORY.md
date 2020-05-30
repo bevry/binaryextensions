@@ -1,5 +1,13 @@
 # History
 
+## v4.0.0 2020 May 21
+
+-   Breaking Change: If you are using CommonJS, you must now do `require('binaryextensions').default`
+-   If you want a JSON file, it is available via `binaryextensions/list.json`, and CDN access is available via https://unpkg.com/binaryextensions/list.json
+-   Converted to TypeScript
+-   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
+-   Minimum required node version changed back from `node: >=10` to `node: >=0.8` to support some users still on very old versions
+
 ## v3.0.0 2020 May 21
 
 -   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
