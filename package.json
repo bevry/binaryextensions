@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Binary Extensions",
   "name": "binaryextensions",
-  "version": "4.3.0",
+  "version": "4.4.0",
   "description": "A package that contains an array of every single file extension there is for binary files",
   "homepage": "https://github.com/bevry/binaryextensions",
   "license": "MIT",
@@ -138,7 +138,7 @@
     "@bevry/update-contributors": "^1.10.0",
     "@typescript-eslint/eslint-plugin": "^3.3.0",
     "@typescript-eslint/parser": "^3.3.0",
-    "assert-helpers": "^6.8.0",
+    "assert-helpers": "^6.10.0",
     "eslint": "^7.3.0",
     "eslint-config-bevry": "^3.9.0",
     "eslint-config-prettier": "^6.11.0",
