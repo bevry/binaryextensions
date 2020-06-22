@@ -148,7 +148,7 @@
     "prettier": "^2.0.5",
     "projectz": "^2.9.0",
     "surge": "^0.21.3",
-    "textextensions": "5.2.0",
+    "textextensions": "5.6.0",
     "typedoc": "^0.17.7",
     "typescript": "^3.9.5",
     "valid-directory": "^2.5.0",
