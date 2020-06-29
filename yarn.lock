@@ -2104,10 +2104,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-textextensions@5.6.0:
-  version "5.6.0"
-  resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-5.6.0.tgz#b8ebff97847941529d30cca7b8fe276b00d38445"
-  integrity sha512-NF+IgMk/8Apvt+j9e70zz77TjkdsJrz8A5qfUB4vFNezVy/so8Q+B/P/79FAn2rsKwn49U+TegDRjLBkwrpkbQ==
+textextensions@5.7.0:
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-5.7.0.tgz#33495b0741318e22fb1b8c6dac5111a70bab32d4"
+  integrity sha512-U6fegwjLVuU2bVSCWF1aOMbLAmBKKslZxr1rILz32gFF+9humufMu7xyQepaUss4Lt+rKCj15Oi6yONH1+8vzw==
 
 through@2, through@^2.3.6:
   version "2.3.8"
