@@ -173,7 +173,7 @@
     "textextensions": "^5.8.0",
     "typedoc": "^0.17.8",
     "typescript": "^3.9.7",
-    "valid-directory": "^2.7.0",
+    "valid-directory": "^3.0.0",
     "valid-module": "^1.11.0"
   },
   "scripts": {
