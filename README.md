@@ -7,7 +7,7 @@
 
 <!-- BADGES/ -->
 
-<span class="badge-travisci"><a href="http://travis-ci.com/bevry/binaryextensions" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/com/bevry/binaryextensions/master.svg" alt="Travis CI Build Status" /></a></span>
+<span class="badge-githubworkflow"><a href="https://github.com/bevry/binaryextensions/actions?query=workflow%3Abevry" title="View the status of this project's GitHub Workflow: bevry"><img src="https://github.com/bevry/binaryextensions/workflows/bevry/badge.svg" alt="Status of the GitHub Workflow: bevry" /></a></span>
 <span class="badge-npmversion"><a href="https://npmjs.org/package/binaryextensions" title="View this project on NPM"><img src="https://img.shields.io/npm/v/binaryextensions.svg" alt="NPM version" /></a></span>
 <span class="badge-npmdownloads"><a href="https://npmjs.org/package/binaryextensions" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/binaryextensions.svg" alt="NPM downloads" /></a></span>
 <span class="badge-daviddm"><a href="https://david-dm.org/bevry/binaryextensions" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/bevry/binaryextensions.svg" alt="Dependency Status" /></a></span>
@@ -71,14 +71,14 @@ Want to detect if a file is text or binary? Check out [bevry/istextorbinary](htt
 <a href="https://deno.land" title="Deno is a secure runtime for JavaScript and TypeScript, it is an alternative for Node.js"><h3>Deno</h3></a>
 
 ``` typescript
-import pkg from 'https://unpkg.com/binaryextensions@^4.15.0/edition-deno/index.ts'
+import pkg from 'https://unpkg.com/binaryextensions@^4.16.0/edition-deno/index.ts'
 ```
 
 <a href="https://www.skypack.dev" title="Skypack is a JavaScript Delivery Network for modern web apps"><h3>Skypack</h3></a>
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.skypack.dev/binaryextensions@^4.15.0'
+    import pkg from '//cdn.skypack.dev/binaryextensions@^4.16.0'
 </script>
 ```
 
@@ -86,7 +86,7 @@ import pkg from 'https://unpkg.com/binaryextensions@^4.15.0/edition-deno/index.t
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/binaryextensions@^4.15.0'
+    import pkg from '//unpkg.com/binaryextensions@^4.16.0'
 </script>
 ```
 
@@ -94,7 +94,7 @@ import pkg from 'https://unpkg.com/binaryextensions@^4.15.0/edition-deno/index.t
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/binaryextensions@4.15.0'
+    import pkg from '//dev.jspm.io/binaryextensions@4.16.0'
 </script>
 ```
 
@@ -103,7 +103,7 @@ import pkg from 'https://unpkg.com/binaryextensions@^4.15.0/edition-deno/index.t
 <p>This package is published with the following editions:</p>
 
 <ul><li><code>binaryextensions/source/index.ts</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> source code with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
-<li><code>binaryextensions/edition-browsers/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against <a href="https://en.wikipedia.org/wiki/ECMAScript#10th_Edition_-_ECMAScript_2019" title="ECMAScript ES2019">ES2019</a> for web browsers with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
+<li><code>binaryextensions/edition-browsers/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against <a href="https://en.wikipedia.org/wiki/ECMAScript#11th_Edition_–_ECMAScript_2020" title="ECMAScript ES2020">ES2020</a> for web browsers with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
 <li><code>binaryextensions</code> aliases <code>binaryextensions/edition-es5/index.js</code></li>
 <li><code>binaryextensions/edition-es5/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against ES5 for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li>
 <li><code>binaryextensions/edition-es5-esm/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against ES5 for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
