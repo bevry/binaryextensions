@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Binary Extensions",
   "name": "binaryextensions",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "A package that contains an array of every single file extension there is for binary files",
   "homepage": "https://github.com/bevry/binaryextensions",
   "license": "Artistic-2.0",
@@ -74,7 +74,7 @@
     "url": "https://github.com/bevry/binaryextensions.git"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=10"
   },
   "editions": [
     {
@@ -113,7 +113,7 @@
         "require"
       ],
       "engines": {
-        "node": "14 || 16 || 18 || 20 || 21",
+        "node": "10 || 12 || 14 || 16 || 18 || 20 || 21",
         "browsers": false
       }
     },
@@ -128,7 +128,7 @@
         "import"
       ],
       "engines": {
-        "node": "14 || 16 || 18 || 20 || 21",
+        "node": "12 || 14 || 16 || 18 || 20 || 21",
         "browsers": false
       }
     },
@@ -167,7 +167,7 @@
     "@types/node": "^20.9.0",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
-    "assert-helpers": "^9.0.0",
+    "assert-helpers": "^10.1.0",
     "eslint": "^8.53.0",
     "eslint-config-bevry": "^3.29.0",
     "eslint-config-prettier": "^9.0.0",
