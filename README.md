@@ -1,6 +1,6 @@
 <!-- TITLE/ -->
 
-# The Definitive List of Binary Extensions
+# List of Binary Extensions
 
 <!-- /TITLE -->
 
@@ -26,7 +26,7 @@
 
 <!-- DESCRIPTION/ -->
 
-A package that contains an array of every single file extension there is for binary files
+A package that contains an array of common file extensions for binary files
 
 <!-- /DESCRIPTION -->
 
